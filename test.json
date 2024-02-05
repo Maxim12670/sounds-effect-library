@@ -1,0 +1,15 @@
+{
+  "success": {
+    "submitOn": true
+  },
+  "html": {
+    "test": "dfsg"
+  },
+  "errors": {
+    "submitOn": false,
+    "errors": {
+      "user_name": "Не валидное значение",
+      "captcha": "Captcha"
+    }
+  }
+}

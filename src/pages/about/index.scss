@@ -1,0 +1,16 @@
+@import "src/styles/typography";
+
+.about-content {
+  @extend %t-p;
+
+  padding: 1.6rem;
+
+
+  h1 {
+    @extend %t-h1;
+  }
+
+  h2 {
+    @extend %t-h2;
+  }
+}

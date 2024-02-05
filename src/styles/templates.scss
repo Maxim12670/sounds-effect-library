@@ -1,0 +1,7 @@
+@import "./function";
+
+%title {
+  @extend %t-h1;
+
+  margin-bottom:rem(32);
+}

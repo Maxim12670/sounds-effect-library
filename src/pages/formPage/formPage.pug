@@ -1,0 +1,108 @@
+extends  ../../layout/layout
+
+block variables
+  -
+      const title = 'Form Page'
+      const formId = 'test'
+block content
+    .form-page.j-form-page
+        .form-page__validation
+            h2.form-page__title Валидация
+            form.j-ajaxForm#test(action='http://localhost:3000/errors',  method='GET', novalidate )
+                fieldset
+                    input#sessid(type='hidden', name='sessid', value='')
+                    +Input({
+                      id: 'name',
+                      placeholder: 'Ваше имя',
+                      name: 'user_name',
+                      required: true,
+                      formId: formId,
+                    })
+                    +Input({
+                      type: "email",
+                      placeholder: 'Ваш E-mail',
+                      name: 'user_email',
+                      required: false,
+                      formId: formId
+                    })
+                    +Input({
+                      type: "url",
+                      placeholder: 'URL',
+                      name: 'user_url',
+                      required: false,
+                      formId: formId
+                    })
+                    +Input({
+                      placeholder: 'Максимальноя длина',
+                      name: 'max_length',
+                      required: false,
+                      formId: formId,
+                      maxLength: 6,
+                    })
+                    +Input({
+                      id: 'user_password',
+                      placeholder: 'Ваш пароль',
+                      name: 'user_password',
+                      required: true,
+                      formId: formId,
+                      minLength: 6,
+                      type: 'password'
+                    })
+                    +Input({
+                      placeholder: 'Повторите пароль пароль',
+                      name: 'user_repeat_password',
+                      required: true,
+                      formId: formId,
+                      equalTo: 'user_password',
+                      minLength: 6,
+                      type: 'password'
+                    })
+                    +Input({
+                      required: true,
+                      placeholder: 'Текст сообщения',
+                      name: 'message',
+                      formId: formId,
+                      isArea: true
+                    })
+                    +Input({
+                      required: true,
+                      placeholder: 'Телефон',
+                      name: 'phone',
+                      formId: formId,
+                      mask: '+7 (000) 000 00 00'
+                    })
+                    +Checkbox({
+                      name: 'confirm',
+                      required: true,
+                      formId: formId,
+                      label: 'Согласен с <a href="http://test" target="_blank">ссылка</a>'
+                    })
+                    +CustomSelect({
+                      name: 'select',
+                      required: true,
+                      formId: formId,
+                      placeholder: 'Селект',
+                      options: [
+                        {
+                          label: "Опция 1"
+                        },
+                        {
+                          label: "Опция 2"
+                        },
+                      ]
+                    })
+                    input(type='hidden', name='PARAMS_HASH', value='a56a2958395fdbd9a186982e0c7803ef')
+                    +Button({
+                      label: 'Submit',
+                      type: 'submit'
+                    })
+        .form-page__autocomplites
+            h2.form-page__title Автозаполнение
+            form#auto.j-ajaxForm-html.j-autocomplete(action='test',  method='get', novalidate data-html="form-result")
+                +Input({
+                  name: 'auto-test',
+                  placeholder: 'Введите название...',
+                  jClass: 'j-autocomplete-input',
+                  formId: 'auto'
+                })
+                #form-result

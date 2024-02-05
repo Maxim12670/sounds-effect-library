@@ -1,0 +1,12 @@
+mixin CustomSelect (props)
+    -
+      const {name, options, placeholder, formId, required} = props || {}
+    .custom-select.j-custom-select(class=`j-err_${formId}_${name}`)
+        .custom-select__body
+            //для открытия/закрытия
+            input.custom-select__header.j-display-value(data-label=placeholder type='checkbox')
+            .custom-select__option-list.j-option-list
+                input.custom-select__option.j-default-value(type='radio', name=name, value='', data-label=placeholder,  required=!!required )
+                each option, index in options || []
+                    input.custom-select__option(type='radio', name=name, value="SOME_VALUE_"+index, data-label=option.label, required=!!required)
+        span.custom-select__error-message(class=`j-err_${formId}_${name}_TEXT`)

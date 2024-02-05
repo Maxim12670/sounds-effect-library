@@ -1,0 +1,8 @@
+mixin Button (props)
+    -
+        const {label, link, jClass, type} = props || {}
+    if link
+        a(href=link)
+            button.simple-btn=label
+    else
+        button.simple-btn(class=jClass, type=!!type&&type)=label

@@ -1,0 +1,6 @@
+mixin Checkbox(props)
+    -
+      const {label, name, required, formId} = props || {}
+    .checkbox(class=`j-err_${formId}_${name}`)
+        input.checkbox__target(name=name, required=!!required, type="checkbox")
+        span.checkbox__label!=label

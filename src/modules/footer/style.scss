@@ -1,0 +1,7 @@
+.footer {
+  display: flex;
+  align-items: center;
+  height: rem($footer-height);
+  padding: rem(8) ;
+  background-color: $c-red;
+}

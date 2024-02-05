@@ -1,0 +1,11 @@
+mixin ExampleItem(props)
+    -
+        const {buttons, img, title} = props || {}
+    article.main-example-item.j-example-item
+        h5.main-example-item__title=title
+        if buttons
+            each button in buttons
+                .main-example-item__button(class=button.jClass)
+                    +Button(button)
+        if img
+            img.main-example-item__paint.j-example-picture(src=img.src alt=img.alt)

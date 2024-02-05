@@ -1,0 +1,18 @@
+@import "./function";
+
+%t-h1 {
+  margin-bottom:rem(32);
+  font-size: rem(28);
+}
+%t-h2 {
+  margin-bottom: rem(30);
+  font-size: rem(24);
+}
+%t-h5 {
+  margin-bottom: rem(30);
+  font-size: rem(18);
+}
+%t-p {
+  margin-bottom: rem(8);
+  font-size: rem(14);
+}

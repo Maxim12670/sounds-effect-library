@@ -1,0 +1,12 @@
+.popup-block{
+  &__title {
+    @extend %t-h2
+  }
+
+  &__actions{
+    display: flex;
+    gap: 1.6rem;
+    justify-content: center;
+    width: 100%;
+  }
+}

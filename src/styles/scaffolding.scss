@@ -1,0 +1,137 @@
+@import "src/styles/variables";
+@import "src/styles/mixns";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  &, &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden auto;
+  font-weight: 400;
+  font-family: $primary-font;
+  word-wrap: break-word;
+}
+
+html, body {
+  word-break: break-word;
+}
+
+html {
+  // 1rem === 10px
+  font-size: calc(100vw / $br-mobile * 10);
+
+  @include br-tablet {
+    font-size: calc(100vw / $br-tablet * 10);
+  }
+
+  @include br-desktop {
+    font-size: calc(100vw / $br-desktop * 10);
+  }
+
+  @include br-desktop-max {
+    font-size: calc(100vw / $br-desktop-max * 10);
+  }
+}
+
+header {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  border: 0;
+}
+
+button {
+  margin: 0;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  object-fit: cover;
+}
+
+nav, footer, header {
+  display: block;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-size: inherit;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+
+  &, &:visited, &:hover {
+    text-decoration: none;
+  }
+
+  &:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+
+  &:focus, &:active {
+    outline: none;
+  }
+}
+
+
+:focus, :active {
+  outline: none;
+}
+
+textarea, input, select {
+  &, &:focus-visible, &:active, &:hover, &:focus {
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+    resize: none;
+  }
+
+
+  &::placeholder {
+    font-weight: inherit;
+  }
+
+  &::-ms-clear {
+    display: none;
+  }
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+main {
+  flex: 1 0 100%;
+}

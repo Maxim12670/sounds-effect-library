@@ -1,0 +1,33 @@
+@import "components/index";
+
+.main-example {
+  padding-bottom: rem(32);
+
+  &__title {
+    @extend %t-h1;
+  }
+
+  &__body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(16);
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__item{
+    width: 100%;
+  }
+
+  @include br-tablet {
+    &__item{
+      width: 48%;
+    }
+  }
+
+  @include br-desktop {
+    &__item{
+      width: 25%;
+    }
+  }
+}
