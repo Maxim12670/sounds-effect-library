@@ -1,3 +1,6 @@
-.hh {
-    background-color: red;
+@import '../../styles/scaffolding';
+
+.hh{
+    font-family: $title-font;
+    font-weight: 500;
 }
