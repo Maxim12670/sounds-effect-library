@@ -1,0 +1,29 @@
+include ./constants
+
+section.head
+    .container
+        header.header
+            .header__logo
+                img(src="../../assets/images/icons/WavesCo.svg" alt="logo")
+            .header__wrapper
+                .header__navigation
+                    ul.header__list
+                        each link in links
+                            li.header__item
+                                a(href=link.url)= link.text
+                button.btn Login
+        .head__line
+        .head__content
+            h2.head__title Free download sound effects without copyright
+            h3.head__subtitle 
+                | Download free copyright sound effect for 
+                | your YouTube video and any use.
+            .head__holder
+                input(
+                    type="text",
+                    placeholder="Search sound effects").head__input
+                .head__search-icon
+                h4.head__prompt
+                    | Try keyword: happy, funny, natural, horror, jumpscare and more
+            h4.head__descr 
+                | 650.654 Available Sounds. Library Updated Weekly. See popular sounds

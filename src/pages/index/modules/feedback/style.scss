@@ -1,0 +1,80 @@
+.feedback {
+    min-height: 692px;
+    padding: 20px 0 140px;
+    color: $c-dark-blue;
+    &__wrapp {
+        width: 975px;
+        text-align: center;
+    }
+    &__caption {
+        color: $c-orange;
+        font-family: $title-font;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 14px;
+        text-transform: uppercase;
+    }
+    &__title {
+        font-family: $title-font;
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    &__list {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+    &-item {
+        width: 305px;
+        height: 333px;
+        padding: 20px 20px 30px 20px;
+        border: 1px solid rgb(238, 238, 238);
+        border-radius: 8px;
+        background-color: $c-white;
+        &__text {
+            color: $c-dark-grey;
+            font-family: $title-font;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 172%;
+        }
+        &__photo {
+            margin-top: 15px;
+        }
+        &__name {
+            color: $c-dark-blue;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 172%;
+        }
+        &__position{
+            color: $c-ligth-grey;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 172%;
+        }
+    }
+    &-scroll {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        &__point {
+            position: relative;
+            margin-right: 10px;
+            background-color: $c-super-ligth-grey;
+            border-radius: 100%;
+            &::before {
+                content: '';
+                display: block;
+                width: 8px;
+                height: 8px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover {
+                background-color: $c-ligth-grey;
+            }
+        }
+    }
+}

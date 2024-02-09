@@ -30,18 +30,18 @@ html, body {
 
 html {
   // 1rem === 10px
-  font-size: calc(100vw / $br-mobile * 10);
-
-  @include br-tablet {
-    font-size: calc(100vw / $br-tablet * 10);
-  }
+  font-size: calc(100vw / $br-desktop-max * 10);
 
   @include br-desktop {
     font-size: calc(100vw / $br-desktop * 10);
   }
 
-  @include br-desktop-max {
-    font-size: calc(100vw / $br-desktop-max * 10);
+  @include br-tablet {
+    font-size: calc(100vw / $br-tablet * 10);
+  }
+
+  @include br-mobile  {
+    font-size: calc(100vw / $br-mobile  * 10);
   }
 }
 

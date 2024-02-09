@@ -1,0 +1,14 @@
+include ./constants
+
+section.pricing#pricing
+        .container
+            h2.pricing__title Download sound effects for your project
+            span.pricing__subtitle Find the right plan for you
+            ul.pricing__list
+                for item in cards
+                    li.pricing-card
+                        h2.pricing-card__title= item.title
+                        span.pricing-card__subtitle= item.descr
+                        span.pricing-card__price= item.price
+                        button.pricing-card__btn Get started
+            span.pricing__subtitle Join premium with 434,849 creators.

@@ -1,0 +1,11 @@
+include ./constants
+
+section.partner#youtube
+        .container
+            .partner__title 
+                | Trusted by top Youtuber and Production House
+            .partner__wrapp
+                ul.partner__list
+                    each item in logoArray
+                        li.partner__list_item
+                            img(src=item.src  alt=item.alt)

@@ -1,0 +1,115 @@
+.sounds {
+    min-height: 717px;
+    padding-top: 80px;
+    &__title {
+        font-family: $title-font;
+        font-weight: 600;
+        font-size: 28px;
+    }
+    &__navigation {
+        display: flex;
+        align-items: center;
+        height: 46px;
+        margin-top: 14px;
+        padding-left: 10px;
+        position: relative;
+        &_btn {
+            display: flex;
+            position: relative;
+            align-items: center;
+            padding: 0px 20px 0px 14px;
+            position: absolute;
+            right: 0;
+            width: 126px;
+            height: 40px;
+            border-radius: 4px;
+            background: rgb(238, 238, 238);
+            font-family: $primary-font;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: left;
+            img {
+                position: absolute;
+                right: 14px;
+            }
+        }
+    }
+    &__filter {
+        display: flex;
+        &_item {
+            margin-right: 28px;
+            font-family: $primary-font;
+            font-weight: 500;
+            font-size: 16px;
+            color: $c-dark-grey;
+            &:active {
+                color: $c-black;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 68px;
+        padding: 12px 1px 10px 20px;
+        border-bottom: 1px solid rgb(238, 238, 238);
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column; 
+        width: 189px;
+        height: 45px;
+    }
+    &__name {
+        color: $c-black;
+        font-family: $primary-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 138%;
+    }
+    &__time {
+        font-family: $primary-font;
+        color: $c-dark-grey;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 172%;
+    }
+    &__descr {
+        width: 251px;
+        height: 44px;
+        color: $c-dark-grey;
+        font-family: $primary-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 138%;
+        text-align: left;
+    }
+    &__singer {
+        color: $c-dark-grey;
+        font-family: $primary-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 138%;
+        letter-spacing: -5%;
+        text-align: left;
+    }
+    &__button-list {
+        width: 148px;
+        height: 36px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link {
+        display: block;
+        margin-top: 20px;
+        color: rgb(4, 50, 223);
+        font-family: $title-font;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+        text-decoration-line: underline;
+    }
+}

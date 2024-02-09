@@ -1,0 +1,109 @@
+.head {
+    min-height: 650px;
+    background: url('../../assets/images/bgImage/header-bg.png') center center/cover no-repeat;
+    &__line {
+        width: 100%;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    &__content {
+        display: block;
+        min-height: 323px;
+        margin: 0 auto;
+        margin-top: 95px;
+    }
+    &__title {
+        color: $c-white;
+        font-family: $title-font;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__subtitle {
+        color: $c-opacity-grey;
+        font-family: $primary-font;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 16px;
+    }
+    &__holder {
+        width: 600px;
+        margin: 0 auto;
+        margin-top: 51px;
+        position: relative;
+    }
+    &__input {
+        margin: 0 auto;
+        width: 100%;
+        height: 60px;
+        border-radius: 8px;
+        padding-left: 47px;
+        background: rgb(238, 238, 238);
+        font-family: $primary-font;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    &__search-icon {
+        position: absolute;
+        top: 18px;
+        left: 20px;
+        width: 24px;
+        height: 24px;
+        background-image: url(../../assets/images/icons/search-icon.svg);
+    }
+    &__prompt {
+        margin-top: 10px;
+        color: rgb(238, 238, 238);
+        font-family: $primary-font;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    &__descr {
+        margin-top: 51px;
+        text-align: center;
+        color: rgb(238, 238, 238);
+        font-family: $primary-font;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    &__logo {
+        display: flex;
+        align-items: center;
+        width: 123px;
+        img {
+            object-fit: fill;
+        }
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__navigation {
+        width: 475px;
+        height: 44px;
+        padding: 0px 10px;
+        margin-right: 43px;
+    }
+    &__list {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $title-font;
+        font-size: 14px;
+        font-weight: 500;
+        color: $c-opacity-grey;
+    }
+    &__item {
+        &:active {
+            color: $c-white;
+        }
+    }
+    
+}

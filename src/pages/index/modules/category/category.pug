@@ -1,0 +1,11 @@
+include ./constants
+
+section.category#category
+        .container
+            h2.category__title Browse by category
+            ul.category__list
+                for item in songsCategory
+                    li.category__item
+                        img.category__image(src=item.src, alt=item.alt)
+                        span.category__desrc=item.text
+            a.category__link(href="") See all category

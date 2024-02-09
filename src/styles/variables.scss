@@ -13,10 +13,17 @@ $br-desktop-max: 1920;
 
 // ----------COLORS
 $c-white: #FFF;
+$c-opacity-grey: rgba(255, 255, 255, 0.6);
+$c-super-ligth-grey: rgb(238, 238, 238);
+$c-grey: rgb(250, 250, 250);
+$c-dark-grey: rgb(76, 82, 106);
+$c-ligth-grey: rgb(172, 175, 184);
 $c-black: #000;
 $c-red: #DE3163;
-$c-blue: #31BADE;
-$c-green: #00B1A5;
+$c-blue: rgb(4, 50, 223);
+$c-ligth-blue: rgb(27, 75, 255);
+$c-dark-blue:rgb(2, 13, 55);
+$c-orange:  rgb(245, 158, 0);
 
 // ----------SIZES
 $header-height: 65;

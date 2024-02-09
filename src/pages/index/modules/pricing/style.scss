@@ -1,0 +1,77 @@
+.pricing {
+    height: 696px;
+    padding: 65px 0 70px 0;
+    background-color: $c-blue;
+    color: $c-white;
+    &__title {
+        font-family: $title-font;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__subtitle {
+        display: block;
+        margin-top: 14px;
+        text-align: center;
+        color: $c-super-ligth-grey;
+        font-family: $primary-font;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__list {
+        display: flex;
+        margin: 44px 0 40px;
+        justify-content: center;
+    }
+    &-card {
+        display: flex;
+        flex-direction: column;
+        width: 334px;
+        height: 345px;
+        padding: 26px 40px 40px 34px;
+        border: 1px solid rgb(205, 214, 249);
+        border-radius: 12px;
+        margin-right: 40px;
+        &:last-child {
+            margin-right: 0px;
+        }
+        &:hover {
+            background-color: $c-ligth-blue;
+            border: none;
+            .pricing-card__btn {
+                background-color: $c-white;
+                color: $c-blue;
+            }
+        }
+        &__title {
+            color: $c-white;
+            font-family: $title-font;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 45px;
+        }
+        &__subtitle {
+            min-height: 95px;
+            margin-top: 13px;
+            color: rgb(238, 238, 238);
+            font-family: $primary-font;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        &__price {
+            margin-top: auto;   
+        }
+        &__btn {
+            display: block;
+            width: 138px;
+            height: 52px;
+            margin-top: auto;
+            margin-bottom: 0px;
+            border: 2px solid $c-white;
+            border-radius: 8px;
+            font-family: $title-font;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
