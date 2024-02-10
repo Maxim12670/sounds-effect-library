@@ -1,0 +1,20 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip1212_1674">
+			<rect id="google-svgrepo-com 1" width="20.000000" height="20.000000" transform="translate(2.000000 2.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip1212_1673">
+			<rect id="Brands / google" width="24.000000" height="24.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Brands / google" width="24.000000" height="24.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip1212_1673)">
+		<rect id="google-svgrepo-com 1" width="20.000000" height="20.000000" transform="translate(2.000000 2.000000)" fill="#FFFFFF" fill-opacity="0"/>
+		<g clip-path="url(#clip1212_1674)">
+			<path id="Vector" d="M2 12C2 6.48599 6.48608 2 12 2C14.2271 2 16.3347 2.71646 18.0957 4.07199L15.7717 7.09067C14.6831 6.25256 13.3787 5.80951 12 5.80951C8.58667 5.80951 5.80957 8.58658 5.80957 12C5.80957 15.4134 8.58667 18.1905 12 18.1905C14.7493 18.1905 17.0854 16.3893 17.8906 13.9048L12 13.9048L12 10.0952L22 10.0952L22 12C22 17.514 17.5139 22 12 22C6.48608 22 2 17.514 2 12Z" fill="#0432DF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+	</g>
+</svg>
