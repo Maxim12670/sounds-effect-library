@@ -8,4 +8,9 @@ section.category#category
                     li.category__item
                         img.category__image(src=item.src, alt=item.alt)
                         span.category__desrc=item.text
-            a.category__link(href="") See all category
+            .category__link
+                +Button({
+                    label: 'See all category',
+                    url: '#',
+                    type: emit 
+                })

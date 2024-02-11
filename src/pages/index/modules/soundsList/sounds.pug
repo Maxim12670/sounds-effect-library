@@ -1,30 +1,38 @@
 include ./constants
 
 section.sounds
-        .container
-            h2.sounds__title 
-                | Best sound effects for youtube videos
-            nav.sounds__navigation
-                ul.sounds__filter
-                    each link in linkFilter
-                        li
-                            a.sounds__filter_item(href=link.href)= link.text
-                buttom.sounds__navigation_btn Filter
-                    img(src='../../assets/images/icons/button/filterBtn.svg')
-            - for(var i = 0; i < 6; i++)
-                .sounds__item
+    .container
+        h2.sounds__title 
+            | Best sound effects for youtube videos
+        nav.sounds__navigation
+            ul.sounds__filter
+                each link in linkFilter
+                    li.sounds__filter_item
+                        +Button({
+                            label: link.text,
+                            url: link.href
+                        })
+            buttom.sounds__navigation_btn Filter
+                img(src='../../assets/images/icons/button/filterBtn.svg')
+        - for(var i = 0; i < 6; i++)
+            .sounds__item
+                button
+                    img(src='../../assets/images/icons/button/playBtn.svg' alt="play button")
+                .sounds__wrap
+                    h2.sounds__name= soundItem.soundName
+                    h3.sounds__time= soundItem.timer
+                h2.sounds__descr= soundItem.descr
+                h2.sounds__singer= soundItem.singer
+                .sounds__button-list
                     button
-                        img(src='../../assets/images/icons/button/playBtn.svg', alt="play button")
-                    .sounds__wrap
-                        h2.sounds__name= soundItem.soundName
-                        h3.sounds__time= soundItem.timer
-                    h2.sounds__descr= soundItem.descr
-                    h2.sounds__singer= soundItem.singer
-                    .sounds__button-list
-                        button
-                            img(src='../../assets/images/icons/button/favoriteBtn.svg', alt="favorite button")
-                        button
-                            img(src='../../assets/images/icons/button/downloadBtn.svg', alt="download button")
-                        button
-                            img(src='../../assets/images/icons/button/moreBtn.svg', alt="more button")
-            a.sounds__link(href="#") See all sound effects 
+                        img(src='../../assets/images/icons/button/favoriteBtn.svg' alt="favorite button")
+                    button
+                        img(src='../../assets/images/icons/button/downloadBtn.svg' alt="download button")
+                    button
+                        img(src='../../assets/images/icons/button/moreBtn.svg' alt="more button")
+        .sounds__link
+            +Button({
+                label: 'See all sound effects',
+                url: '#',
+                type: emit
+            })
