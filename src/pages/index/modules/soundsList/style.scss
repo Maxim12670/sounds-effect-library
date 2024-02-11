@@ -42,7 +42,7 @@
             font-weight: 500;
             font-size: 16px;
             color: $c-dark-grey;
-            &:active {
+            &:hover {
                 color: $c-black;
                 text-decoration: underline;
             }
@@ -103,13 +103,6 @@
         justify-content: space-between;
     }
     &__link {
-        display: block;
         margin-top: 20px;
-        color: rgb(4, 50, 223);
-        font-family: $title-font;
-        font-size: 14px;
-        font-weight: 600;
-        text-align: left;
-        text-decoration-line: underline;
     }
 }
