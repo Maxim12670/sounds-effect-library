@@ -1,3 +1,103 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(2, 13, 55, 0.5);
+        z-index: 0;
+    }
+    &-window {
+        position: absolute;
+        top: 47px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 480px;
+        height: 690px;
+        padding: 40px;
+        border-radius: 24px;
+        background-color: $c-white;
+        z-index: 99;
+        &__title {
+            color: $c-dark-blue;
+            font-family: $title-font;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 45px;
+            letter-spacing: -2%;
+        }
+        &__brands {
+            display: flex;
+            justify-content: space-between;
+            width: 124px;
+            margin-top: 24px;
+        }
+        &__subtitle {
+            margin-top: 24px;
+            color: $c-ligth-grey;
+            font-family: $primary-font;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 180%;
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            width: 100%;
+        }
+        &__label {
+            display: block;
+            margin-bottom: 30px;
+            color: $c-dark-grey;
+            font-family: $primary-font;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 180%;
+        }
+        &__input {
+            display: block;
+            width: 100%;
+            height: 52px;
+            padding: 14px 20px;
+            border-radius: 8px;
+            background-color: $c-super-ligth-grey;
+        }
+        &__btn {
+            margin-top: 20px;
+            width: 400px;
+            height: 52px;
+        }
+        &__link-registr {
+            margin-top: 24px;
+            color: $c-blue;
+            font-family: $title-font;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: -1%;
+        }
+        &__question {
+            margin-top: 24px;
+            color: rgb(172, 175, 184);
+            font-family: $primary-font;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 180%;
+        }
+    }
+}
+
 .head {
     min-height: 650px;
     background: url('../../assets/images/bgImage/header-bg.png') center center/cover no-repeat;
@@ -81,6 +181,10 @@
             object-fit: fill;
         }
     }
+    &__btn{
+        width: 78px;
+        height: 44px;
+    }
     &__wrapper {
         display: flex;
     }
@@ -101,9 +205,8 @@
         color: $c-opacity-grey;
     }
     &__item {
-        &:active {
+        &:hover {
             color: $c-white;
         }
     }
-    
 }
