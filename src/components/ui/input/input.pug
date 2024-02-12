@@ -1,7 +1,7 @@
 mixin Input(props)
     - 
-        const { label, placeholder, type, JClass } = props || {}
+        const { label, placeholder, type, required, JClass } = props || {}
 
     label.input
         span=label
-        input.input__box(type=type, placeholder=placeholder)
+        input.input__box(type=type, placeholder=placeholder, required=!!required)
