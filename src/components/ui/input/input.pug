@@ -1,0 +1,7 @@
+mixin Input(props)
+    - 
+        const { label, placeholder, type, JClass } = props || {}
+
+    label.input
+        span=label
+        input.input__box(type=type, placeholder=placeholder)
