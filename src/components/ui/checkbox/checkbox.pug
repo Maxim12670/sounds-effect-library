@@ -1,0 +1,8 @@
+mixin Checkbox(props)
+    -
+        const { label } = props || {}
+
+    label.check.option
+        input.check__input(type="checkbox")
+        span.check__box
+        span=label
