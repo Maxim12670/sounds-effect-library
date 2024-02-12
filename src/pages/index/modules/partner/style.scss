@@ -1,22 +1,26 @@
 .partner {
     width: 100%;
-    min-height: 237px;
+    min-height: rem(237);
     background-color: $c-grey;
-    padding-top: 50px;
+    padding-top: 4.9rem;
 
     &__title {
         font-family: $title-font;
-        font-size: 20px;
+        font-size: 2rem;
+        line-height: 3rem;
+        letter-spacing: -2%;
         font-weight: 600;
         text-align: center;
     }
 
     &__wrapp {
-        margin-top: 35px;;
+        margin: 0 auto;
+        width: rem(1035);
+        margin-top: 3.5rem;
     }
     &__list {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         &_item {
             display: flex;
             align-items: center;
