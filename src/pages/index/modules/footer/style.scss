@@ -1,6 +1,6 @@
 .footer {
-    min-height: 295px;
-    padding: 50px 0 50px;
+    min-height: rem(300);
+    padding: 5rem 0 5rem;
     background-color: $c-dark-blue;
     color: $c-ligth-grey;
     &__wrapp{
@@ -11,36 +11,42 @@
     &-descr {
         display: flex;
         flex-direction: column;
-        max-width: 298px;
+        max-width: rem(298);
         &__logo {
-            width: 170px;
-            height: 26px;
+            width: rem(170);
+            height: 2.6rem;
         }
         &__text {
-            margin-top: 25px;
+            margin-top: 2.5rem;
             color: $c-ligth-grey;
-            font-size: 16px;
+            font-family: $primary-font;
+            font-size: 1.6rem;
             font-weight: 400;
             line-height: 180%;
+            letter-spacing: -0.08rem;
         }
         &__copyright {
-            margin-top: 30px;
+            margin-top: 3rem;
+            font-family: $primary-font;
             color: rgb(172, 175, 184);
-            font-size: 14px;
+            font-size: 1.4rem;
             font-weight: 500;
             line-height: 172%;
         }
     }
     &__list {
         color: $c-super-ligth-grey;
-        font-size: 18px;
+        font-size: 1.8rem;
         font-weight: 600;
         line-height: 172%;
+        letter-spacing: -0.06rem;
     }
     &__item {
+        margin-top: 1.2rem;
         color: $c-ligth-grey;
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: 400;
         line-height: 180%;
+        letter-spacing: -0.06rem;
     }
 }

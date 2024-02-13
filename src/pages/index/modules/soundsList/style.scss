@@ -1,126 +1,128 @@
 .sounds {
-    min-height: rem(717);
-    padding-top: 8rem;
-    &__title {
-        font-family: $title-font;
-        font-weight: 600;
-        font-size: 2.8rem;
-        line-height: 4.5rem;
-        letter-spacing: -0.02rem;
+  min-height: rem(717);
+  padding-top: 8rem;
+  &__title {
+    font-family: $title-font;
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 4.5rem;
+    letter-spacing: -0.06rem;
+  }
+  &__navigation {
+    display: flex;
+    align-items: center;
+    height: 4.6rem;
+    margin-top: 1.1rem;
+    padding-left: 1rem;
+    position: relative;
+    &_btn {
+      display: flex;
+      position: relative;
+      align-items: center;
+      padding: 0 2rem 0 1.9rem;
+      position: absolute;
+      right: 0;
+      width: rem(126);
+      height: 4rem;
+      border-radius: 0.4rem;
+      background: rgb(238, 238, 238);
+      font-family: $primary-font;
+      font-size: 1.6rem;
+      letter-spacing: 0.02rem;
+      font-weight: 500;
+      text-align: left;
+      img {
+        position: absolute;
+        right: 1.4rem;
+      }
     }
-    &__navigation {
-        display: flex;
-        align-items: center;
-        height: 4.6rem;
-        margin-top: 1.4rem;
-        padding-left: 1rem;
-        position: relative;
-        &_btn {
-            display: flex;
-            position: relative;
-            align-items: center;
-            padding: 0 2rem 0 1.9rem;
-            position: absolute;
-            right: 0;
-            width: rem(126);
-            height: 4rem;
-            border-radius: 0.4rem;
-            background: rgb(238, 238, 238);
-            font-family: $primary-font;
-            font-size: 1.6rem;
-            letter-spacing: 0.02rem;
-            font-weight: 500;
-            text-align: left;
-            img {
-                position: absolute;
-                right: 1.4rem;
-            }
-        }
-    }
-    &__filter {
-        display: flex;
-        &_item {
-            margin-right: 2.8rem;
-            font-family: $primary-font;
-            font-weight: 500;
-            font-size: 1.6rem;
-            line-height: 138%;
-            letter-spacing: 0.02rem;
-            color: $c-dark-grey;
-            &:hover {
-                color: $c-black;
-                text-decoration: underline;
-            }
-        }
-    }
-    &__list {
-        margin-top: 2rem;
-        width: rem(1044);
-    }
-    &__item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 6.8rem;
-        padding: 1.2rem 0.1rem 1rem 2rem;
-        border-bottom: 1px solid rgb(238, 238, 238);
-    }
-    &__btn {
-        width: 3.4rem;
-        height: 3.4rem;
-    }
-    &__wrap {
-        display: flex;
-        flex-direction: column; 
-        width: rem(189);
-        height: 4.5rem;
-    }
-    &__name {
+  }
+  &__filter {
+    display: flex;
+    &_item {
+      margin-right: 2.8rem;
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 138%;
+      letter-spacing: -0.05rem;
+      color: $c-dark-grey;
+      &:hover {
         color: $c-black;
-        font-family: $primary-font;
-        font-size: 1.6rem;
-        line-height: 138%;
-        letter-spacing: -0.05rem;
-        text-align: left;
+        text-decoration: underline;
+      }
     }
-    &__time {
-        margin-top: .2rem;
-        font-family: $primary-font;
-        color: $c-dark-grey;
-        font-size: 1.2rem;
-        font-weight: 400;
-        line-height: 172%;
-        letter-spacing: -0.05rem;
-    }
-    &__descr {
-        width: rem(251);
-        height: 4.4rem;
-        padding-right: 2rem;
-        color: $c-dark-grey;
-        font-family: $primary-font;
-        font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 138%;
-        text-align: left;
-    }
-    &__singer {
-        width: rem(212);
-        height: 2.2rem;
-        color: $c-dark-grey;
-        font-family: $primary-font;
-        font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 138%;
-        text-align: left;
-    }
-    &__button-list {
-        width: rem(148);
-        height: 3.6rem;
-        display: flex;
-        justify-content: space-between;
-    }
-    &__link {
-        margin-top: 2rem;
-    }
+  }
+  &__list {
+    margin-top: 2rem;
+    width: rem(1044);
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 6.8rem;
+    padding: 1.2rem 0.1rem 1rem 2rem;
+    border-bottom: 1px solid rgb(238, 238, 238);
+  }
+  &__btn {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column; 
+    width: rem(189);
+    height: 4.5rem;
+  }
+  &__name {
+    color: $c-black;
+    font-family: $primary-font;
+    font-size: 1.6rem;
+    line-height: 158%;
+    letter-spacing: -0.08rem;
+    text-align: left;
+  }
+  &__time {
+    margin-top: .2rem;
+    font-family: $primary-font;
+    color: $c-dark-grey;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 172%;
+    letter-spacing: -0.05rem;
+  }
+  &__descr {
+    width: rem(251);
+    height: 4.4rem;
+    padding-right: 2rem;
+    color: $c-dark-grey;
+    font-family: $primary-font;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: -0.07rem;
+    line-height: 148%;
+    text-align: left;
+  }
+  &__singer {
+    width: rem(212);
+    height: 2.2rem;
+    color: $c-dark-grey;
+    font-family: $primary-font;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 158%;
+    letter-spacing: -0.08rem;
+    text-align: left;
+  }
+  &__button-list {
+    width: rem(148);
+    height: 3.6rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link {
+    margin-top: 2rem;
+  }
 }

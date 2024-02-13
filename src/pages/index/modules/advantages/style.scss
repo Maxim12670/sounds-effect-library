@@ -1,62 +1,64 @@
 .advantages {
-    min-height: 532px;
-    padding: 60px 0 100px 0;
-    &__wrapp {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__question {
-        color: rgb(245, 158, 0);
-        font-family: $title-font;
-        font-size: 14px;
-        font-weight: 600;
-        text-align: left;
-        text-transform: uppercase;
-    }
-    &__answer {
-        margin-top: 17px;
-        width: 337px;
-        color: $c-dark-blue;
-        font-family: $title-font;
-        font-size: 28px;
-        font-weight: 600;
-        line-height: 45px;
-        text-align: left;
-    }
-    &__list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+  min-height: 53.2rem;
+  padding: 6rem 0 10rem 0;
+  &__wrapp {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__question {
+    color: rgb(245, 158, 0);
+    font-family: $title-font;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  &__answer {
+    margin-top: 1.7rem;
+    width: rem(337);
+    color: $c-dark-blue;
+    font-family: $title-font;
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+    letter-spacing: -0.06rem;
+    text-align: left;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
         
-        width: 602px;
-        margin-left: 105px;
+    width: rem(602);
+    margin-left: 10.5rem;
+  }
+  &-item {
+    width: rem(246);
+    margin-top: 5.3rem;
+    &:nth-child(-n+2) {
+      margin-top: 0;
     }
-    &-item {
-        width: 246px;
-        margin-top: 53px;
-        &:nth-child(-n+2) {
-            margin-top: 0px;
-        }
-        &__wrapp {
-            width: 100%;
-            margin-top: 21px;
-        }
-        &__title {
-            color: $c-dark-blue;
-            font-family: $primary-font;
-            font-size: 17px;
-            font-weight: 600;
-            line-height: 172%;
-            text-align: left;
-        }
-        &__descr {
-            color: $c-dark-grey;
-            font-family: $primary-font;
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 172%;
-            text-align: left;
-        }
+    &__wrapp {
+      width: 100%;
+      margin-top: 2.1rem;
     }
+    &__title {
+      color: $c-dark-blue;
+      font-family: $primary-font;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 172%;
+      letter-spacing: -0.09rem;
+    }
+    &__descr {
+      color: $c-dark-grey;
+      font-family: $title-font;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 178%;
+      letter-spacing: -0.03rem;
+    }
+  }
 }
