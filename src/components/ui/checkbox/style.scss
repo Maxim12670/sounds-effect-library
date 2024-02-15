@@ -1,27 +1,30 @@
-.option {
-    display: block;
-}
-
 .check {
-    padding-left: 3rem;
-    color: $c-dark-grey;
-    font-family: $primary-font;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 180%;
-    &__input {
-        position: absolute;
-        -webkit-appearance: none;
-        appearance: none;
-        &:checked + .check__box {
-            background: url("../../assets/images/icons/checkbox/check_box_checked.svg") center center / cover no-repeat;
-        }
+  display: block;
+  padding-left: 3rem;
+  color: $c-dark-grey;
+  font-family: $primary-font;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 180%;
+  &__input {
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    &:checked + .check__box {
+      background: url("../../assets/images/icons/checkbox/checkbox_checked.svg") center center / cover no-repeat;
+      &_ligth {
+        background: url("../../assets/images/icons/checkbox/checkbox_checked_ligth.svg") center center / cover no-repeat;
+      }
     }
-    &__box{
-        position: absolute;
-        margin-left: -3rem;
-        width: 2.4rem;
-        height: 2.4rem;
-        background: url("../../assets/images/icons/checkbox/check_box_unchecked.svg") center center / cover no-repeat;
+  }
+  &__box{
+    position: absolute;
+    margin-left: -3rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url("../../assets/images/icons/checkbox/checkbox_unchecked.svg") center center / cover no-repeat;
+    &_ligth {
+      background: url("../../assets/images/icons/checkbox/checkbox_unchecked_ligth.svg") center center / cover no-repeat;
     }
+  }
 }

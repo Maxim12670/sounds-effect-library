@@ -1,10 +1,10 @@
 mixin Button (props)
-    -
-        const { label, JClass, url, type } = props || {}
-    if url 
-        if type 
-            a.link__emit(href=url, class=JClass)=label
-        else
-            a(href=url, class=JClass)=label
+  -
+    const { label, JClass, url, type } = props || {}
+  if url 
+    if type 
+      a.link__emit(href=url, class=JClass)=label
     else
-        button.btn(class=JClass)=label
+      a(href=url, class=JClass)=label
+  else
+    button.btn(class=JClass)=label

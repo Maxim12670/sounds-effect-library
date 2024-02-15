@@ -1,8 +1,14 @@
 mixin Checkbox(props)
-    -
-        const { label } = props || {}
+  -
+    const { label, ligth } = props || {}
 
-    label.check.option
-        input.check__input(type="checkbox")
-        span.check__box
-        span=label
+  if(ligth)
+    label.check
+      input.check__input(type="checkbox")
+      span.check__box.check__box_ligth
+      span=label
+  else
+    label.check
+      input.check__input(type="checkbox")
+      span.check__box
+      span=label

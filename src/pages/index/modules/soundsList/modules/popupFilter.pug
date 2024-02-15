@@ -1,0 +1,18 @@
+include ./constants
+
+.popup-filter
+  .popup-filter__title Filter
+  .popup-filter__close.j-filters-close
+  .popup-filter__subtitle Duration
+  .popup-filter__range
+  .popup-filter__select
+    +Select({array: categories})
+  .popup-filter__check 
+    .popup-filter__check-item
+      +Checkbox({label: 'Only free sounds', ligth: true})
+    .popup-filter__check-item 
+      +Checkbox({label: 'Only my favorite sounds', ligth: true})
+  .popup-filter__button 
+    +Button({
+      label: 'Apply'
+    })

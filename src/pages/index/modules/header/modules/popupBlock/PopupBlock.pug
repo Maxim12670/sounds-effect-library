@@ -13,12 +13,22 @@ block content
           img(src=item.url, alt=item.alt)
     h3.modal-window__subtitle or use your email
     .modal-window__form
-      label.modal-window__label(for="email") Email
-        input.modal-window__input#email(type="email" placeholder="Email")
-      label.modal-window__label(for="password") Password
-        input.modal-window__input#password(type="password" placeholder="Password")
-      label.modal-window__label(for="remember") Remember Me
-        input.modal-window__checkbox#password(type="checkbox")
+      .modal-window__label(for="email")
+        +Input({
+          type: 'email',
+          placeholder: 'Email',
+          label: 'Email'
+        })
+      .modal-window__label(for="password")
+        +Input({
+          type: 'password',
+          placeholder: 'Password',
+          label: 'Password'
+        })
+      .modal-window__label
+        +Checkbox({
+          label: 'Remember Me'
+        })
       .modal-window__btn
         +Button({
           label: 'Login'

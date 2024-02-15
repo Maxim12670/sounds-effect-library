@@ -1,0 +1,6 @@
+mixin Select (props)
+  -
+    const { array } = props || {}
+  select.select
+    for item in array 
+      option(value=item)=item  
