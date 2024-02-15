@@ -1,0 +1,14 @@
+include ./constants
+
+.feedback__list.swiper
+  .swiper-wrapper
+    for item in buyers
+      .swiper-slide.feedback-item
+        img.feedback-item__icon(src=url, alt=item.name)
+        .feedback-item__text=item.text
+        img.feedback-item__photo(src=item.url, alt=item.name)
+        .feedback-item__name=item.name
+        .feedback-item__position=item.position
+  //- .swiper-button-prev
+  //- .swiper-button-next
+  .swiper-pagination.my-swiper-pagination

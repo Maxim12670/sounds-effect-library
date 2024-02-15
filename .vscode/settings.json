@@ -3,12 +3,12 @@
   "editor.guides.bracketPairs": false,
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.fixAll.stylelint": "explicit"
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
   },
   "stylelint.validate": [
     "css",
     "scss"
-],
+  ],
   "stylelint.configFile": "D:/projects/meetup-info/3. start-templates/bitrix-start-template/.stylelintrc.json"
 }

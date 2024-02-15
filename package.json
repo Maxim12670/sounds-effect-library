@@ -16,6 +16,7 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.15.6",
     "@babel/preset-env": "^7.15.8",
     "@babel/preset-typescript": "^7.15.0",
+    "@types/jquery": "^3.5.29",
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",
     "add-asset-html-webpack-plugin": "^6.0.0",
@@ -54,7 +55,9 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "jquery": "^3.7.1",
     "postcss-preset-env": "^9.3.0",
-    "swiper": "^8.3.2"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.4.7"
   }
 }

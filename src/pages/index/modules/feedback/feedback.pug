@@ -1,19 +1,6 @@
-include ./constants
-
 section.feedback#feedback
-        .container
-            .feedback__wrapp
-                span.feedback__caption TESTIMONIALS
-                h2.feedback__title Hear good experiences from our customers
-                ul.feedback__list
-                    for item in buyers
-                        li.feedback-item
-                            img.feedback-item__icon(src=url, alt=item.name)
-                            .feedback-item__text=item.text
-                            img.feedback-item__photo(src=item.url, alt=item.name)
-                            .feedback-item__name=item.name
-                            .feedback-item__position=item.position
-                ul.feedback-scroll
-                    li.feedback-scroll__point
-                    li.feedback-scroll__point
-                    li.feedback-scroll__point
+  .container
+    .feedback__wrapp
+      span.feedback__caption TESTIMONIALS
+      h2.feedback__title Hear good experiences from our customers
+      include ./modules/slider

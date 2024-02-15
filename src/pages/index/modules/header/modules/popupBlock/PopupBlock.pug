@@ -1,0 +1,29 @@
+extends ../../../../../../components/popup/Popup
+block variables
+  -
+    var JClass = 'j-example-popup'
+
+block content
+  .modal-window
+    h2.modal-window__title Login
+    .modal-window__close.j-popup-close
+    ul.modal-window__brands
+      for item in brands
+        li.modal-window__item
+          img(src=item.url, alt=item.alt)
+    h3.modal-window__subtitle or use your email
+    .modal-window__form
+      label.modal-window__label(for="email") Email
+        input.modal-window__input#email(type="email" placeholder="Email")
+      label.modal-window__label(for="password") Password
+        input.modal-window__input#password(type="password" placeholder="Password")
+      label.modal-window__label(for="remember") Remember Me
+        input.modal-window__checkbox#password(type="checkbox")
+      .modal-window__btn
+        +Button({
+          label: 'Login'
+        })
+    a.modal-window__link-registr(href="#") or Sing Up 
+    a.modal-window__question(href="#") Forgot password?
+
+//-верстка моего окна
