@@ -8,3 +8,9 @@
     width: rem(1044);
     margin: 0 auto;
 }
+
+@media (min-width: 32.1rem) and (max-width: 124.3rem) {
+  .container {
+    width: rem(648);
+  }
+}

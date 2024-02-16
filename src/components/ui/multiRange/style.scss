@@ -1,0 +1,100 @@
+.middle {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.slider {
+  position: relative;
+  z-index: 1;
+  height: 0.4rem;
+}
+
+.slider>.track {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0.5rem;
+  background-color: $c-white;
+}
+
+.slider>.range {
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
+  border-radius: 0.5rem;
+  background-color: blue;
+}
+
+.slider>.thumb {
+  position: absolute;
+  z-index: 3;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: $c-blue;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(98, 0, 238, .1);
+  transition: box-shadow .3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $c-white;
+}
+
+.slider>.thumb.left {
+  left: 25%;
+  transform: translate(-0.3rem, -0.2rem);
+  word-break: normal;
+}
+
+.slider>.thumb.right {
+  right: 25%;
+  transform: translate(0.3rem, -0.2rem);
+  word-break: normal;
+}
+
+input[type=range] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 1rem;
+  width: 100%;
+  opacity: 0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0;
+  border: 0 none;
+  background-color: $c-red;
+  -webkit-appearance: none;
+}
+
+/* установить настройки шрифта   */
+.tooltip {
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: $c-white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 12px;
+  display: block;
+  color: $c-dark-grey;
+  font-family: $primary-font;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 172%;
+  letter-spacing: -0.05rem;
+}

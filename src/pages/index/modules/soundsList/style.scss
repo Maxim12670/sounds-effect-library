@@ -15,7 +15,6 @@
     align-items: center;
     height: 4.6rem;
     margin-top: 1.1rem;
-    padding-left: 1rem;
     position: relative;
     &_btn {
       display: flex;
@@ -42,6 +41,7 @@
   }
   &__filter {
     display: flex;
+    padding: 1rem;
     &_item {
       margin-right: 2.8rem;
       font-family: $primary-font;
@@ -50,6 +50,9 @@
       line-height: 138%;
       letter-spacing: -0.05rem;
       color: $c-dark-grey;
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
       &:hover {
         color: $c-black;
         text-decoration: underline;
@@ -151,3 +154,36 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .sounds {
+    &__title {
+      font-size: 2.4rem;
+    }
+    &__filter{
+      &_item {
+        font-size: 1.4rem;
+      }
+    }
+    &__navigation {
+      &_btn {
+        width: rem(101);
+        padding-left: 14px;
+        img {
+          right: 0.4rem;
+        }
+      }
+    }
+    &__wrap {
+      width: rem(129);
+    }
+    &__name {
+      font-size: 1.4rem;
+    }
+    &__descr {
+      display: none;
+    }
+    &__singer {
+      font-size: 1.4rem;
+    }
+  }
+}

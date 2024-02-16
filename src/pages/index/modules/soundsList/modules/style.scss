@@ -31,9 +31,10 @@
     text-align: left;
   }
   &__range {
+    padding-top: 2.5rem;
     height: 3.5rem;
     width: 100%;
-    background: url('../../assets/images/icons/rangeSlider.png') center center/cover no-repeat;
+    height: 40px;
     margin-top: 0.5rem;
   }
   &__select {

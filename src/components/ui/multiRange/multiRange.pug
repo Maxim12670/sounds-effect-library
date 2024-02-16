@@ -1,0 +1,13 @@
+mixin MultiRange(props)
+
+  .middle
+    .multi-range-slider
+      input.j-input-left(type='range' min='0' max='100' value='25')
+      input.j-input-right(type='range' min='0' max='100' value='75')
+      .slider
+        .track
+        .range.j-range
+        .thumb.left.j-leftThumb
+          .tooltip.j-tooltipLeft time
+        .thumb.right.j-rightThumb
+          .tooltip.j-tooltipRigth time

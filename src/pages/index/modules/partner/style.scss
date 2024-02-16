@@ -1,29 +1,34 @@
 .partner {
-    width: 100%;
-    min-height: rem(237);
-    background-color: $c-grey;
-    padding-top: 4.9rem;
+  width: 100%;
+  min-height: rem(237);
+  background-color: $c-grey;
+  padding-top: 4.9rem;
 
-    &__title {
-        font-family: $title-font;
-        font-size: rem(20);
-        line-height: 3rem;
-        letter-spacing: -0.04rem;
-        font-weight: 600;
-        text-align: center;
-    }
+  &__title {
+    font-family: $title-font;
+    font-size: rem(20);
+    line-height: 3rem;
+    letter-spacing: -0.04rem;
+    font-weight: 600;
+    text-align: center;
+  }
 
-    &__wrapp {
-        margin: 0 auto;
-        width: rem(1035);
-        margin-top: 3.5rem;
+  &__wrapp {
+    margin: 0 auto;
+    margin-top: 3.5rem;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    &_item {
+      display: flex;
+      align-items: center;
     }
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        &_item {
-            display: flex;
-            align-items: center;
-        }
-    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partner {
+    min-height: rem(195);
+  }
 }

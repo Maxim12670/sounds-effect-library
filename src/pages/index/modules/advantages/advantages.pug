@@ -1,16 +1,16 @@
 include ./constants
 
 section.advantages#advantages
-    .container
-        .advantages__wrapp
-            div 
-                span.advantages__question why us?
-                h2.advantages__answer
-                    | We are provide the best quality sound effects without copyright.
-            ul.advantages__list
-                for item in x
-                    li.advantages-item
-                        img.advantages-item__img(src=item.src, alt=item.alt)
-                        .advantages-item__wrapp 
-                            .advantages-item__title= item.title
-                            .advantages-item__descr= item.descr
+  .container
+    .advantages__wrapp
+      div 
+        span.advantages__question why us?
+        h2.advantages__answer
+          | We are provide the best quality sound effects without copyright.
+      ul.advantages__list
+        for item in x
+          li.advantages-item
+            img.advantages-item__img(src=item.src, alt=item.alt)
+            .advantages-item__wrapp 
+              .advantages-item__title= item.title
+              .advantages-item__descr= item.descr

@@ -60,6 +60,7 @@
     background: url("../../assets/images/icons/search-icon.svg") center center/cover no-repeat;
   }
   &__prompt {
+    display: block;
     margin-top: 1rem;
     color: rgb(238, 238, 238);
     font-family: $primary-font;
@@ -120,6 +121,34 @@
     color: $c-opacity-grey;
     &:hover {
       color: $c-white;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 1rem 0;
+    min-height: 6.9rem;
+    &__navigation{
+      display: none;
+    }
+    &__btn {
+      display: none;
+    }
+  }
+
+  .head {
+    min-height: rem(667);
+    &__subtitle{
+      font-size: 1.8rem;
+    }
+    &__content {
+      height: 373px;
+    }
+    &__descr {
+      display: block;
+      margin-top: 5.1rem;
+      
     }
   }
 }
