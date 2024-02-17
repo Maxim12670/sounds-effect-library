@@ -2,7 +2,6 @@
 import Swiper, { Navigation, Pagination } from 'swiper'
 
 const container = document.querySelector('.feedback__list')
-const btnNeaxt = document.querySelectorAll('.feedback__list .swiper-button-next')
 const pagination = document.querySelector('.swiper-pagination')
 console.log(pagination)
 
