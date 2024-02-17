@@ -1,5 +1,5 @@
 .category {
-  padding-top: 6rem 0 6rem;
+  padding: 6rem 0 6rem;
   &__title {
     color: $c-dark-blue;
     font-family: $title-font;
@@ -41,7 +41,7 @@
     letter-spacing: -0.09rem;
   }
   &__link {
-    margin-top: 3.4rem;
+    margin-top: 0.7rem;
   }
 }
 
