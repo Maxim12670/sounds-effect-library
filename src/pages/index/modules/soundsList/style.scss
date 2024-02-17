@@ -1,8 +1,7 @@
 @import './modules/style';
 
 .sounds {
-  min-height: rem(717);
-  padding-top: 8rem;
+  padding: 8rem 0 6rem;
   &__title {
     font-family: $title-font;
     font-weight: 600;
@@ -156,6 +155,7 @@
 
 @media screen and (max-width: 768px) {
   .sounds {
+    padding: 5rem 0 5rem;
     &__title {
       font-size: 2.4rem;
     }

@@ -1,11 +1,9 @@
 @import './modules/style';
 
 .feedback {
-  min-height: rem(692);
   padding: 6rem 0 14rem;
   color: $c-dark-blue;
   &__wrapp {
-    width: rem(975);
     margin: 0 auto;
     text-align: center;
   }
@@ -24,5 +22,17 @@
     font-weight: 600;
     line-height: 160%;
     letter-spacing: -0.05rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feedback {
+    padding: 6rem 0 9rem;
+    &__caption {
+      font-size: 1.4rem;
+    }
+    &__title {
+      font-size: 2.4rem;
+    }
   }
 }

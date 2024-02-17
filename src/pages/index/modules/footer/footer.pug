@@ -1,17 +1,18 @@
 include ./constants
 
 section#footer
-    footer.footer
-        .container
-            .footer__wrapp
-                .footer-descr
-                    img.footer-descr__logo(src="../../assets/images/icons/WavesCo.svg" alt="logo")
-                    .footer-descr__text
-                        | WavesCo is a platform for providing premium sound effects 
-                        | for Youtube videos, movies and many more.
-                    .footer-descr__copyright
-                        | WavesCo &copy;2021, All rights reserved
-                for item in arr
-                    ul.footer__list= item[0]
-                        for ttt in item[1]
-                            li.footer__item= ttt 
+  footer.footer
+    .container
+      .footer__wrapp
+        .footer-descr
+          img.footer-descr__logo(src="../../assets/images/icons/WavesCo.svg" alt="logo")
+          .footer-descr__text
+            | WavesCo is a platform for providing premium sound effects 
+            | for Youtube videos, movies and many more.
+          .footer-descr__copyright
+            | WavesCo &copy;2021, All rights reserved
+        div.footer__nav
+          for item in arr
+            ul.footer__list= item[0]
+              for ttt in item[1]
+                li.footer__item= ttt 

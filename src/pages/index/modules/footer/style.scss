@@ -1,52 +1,94 @@
 .footer {
-    min-height: rem(300);
-    padding: 5rem 0 5rem;
-    background-color: $c-dark-blue;
+  padding: 5rem 0 5rem;
+  background-color: $c-dark-blue;
+  color: $c-ligth-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__wrapp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__nav {
+    width: rem(594);
+  }
+  &-descr {
+    display: flex;
+    flex-direction: column;
+    max-width: rem(298);
+    &__logo {
+      width: rem(170);
+      height: 2.6rem;
+    }
+    &__text {
+      margin-top: 2.5rem;
+      color: $c-ligth-grey;
+      font-family: $primary-font;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 180%;
+      letter-spacing: -0.08rem;
+    }
+    &__copyright {
+      margin-top: 3rem;
+      font-family: $primary-font;
+      color: rgb(172, 175, 184);
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 172%;
+    }
+  }
+  &__list {
+    color: $c-super-ligth-grey;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 172%;
+    letter-spacing: -0.06rem;
+  }
+  &__item {
+    margin-top: 1.2rem;
     color: $c-ligth-grey;
-    &__wrapp{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: -0.06rem;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 4rem 0 4rem 6rem;
+    &__wrapp {
+      display: flex;
+      flex-direction: column;
     }
     &-descr {
-        display: flex;
-        flex-direction: column;
-        max-width: rem(298);
-        &__logo {
-            width: rem(170);
-            height: 2.6rem;
-        }
-        &__text {
-            margin-top: 2.5rem;
-            color: $c-ligth-grey;
-            font-family: $primary-font;
-            font-size: 1.6rem;
-            font-weight: 400;
-            line-height: 180%;
-            letter-spacing: -0.08rem;
-        }
-        &__copyright {
-            margin-top: 3rem;
-            font-family: $primary-font;
-            color: rgb(172, 175, 184);
-            font-size: 1.4rem;
-            font-weight: 500;
-            line-height: 172%;
-        }
+      &__logo {
+        width: 14.2rem;
+        height: 2.1rem;
+      }
+      &__text {
+        font-size: 1.4rem;
+      }
+      &__copyright {
+        font-size: 1.4rem;
+        margin-top: 2rem;
+      }
     }
     &__list {
-        color: $c-super-ligth-grey;
-        font-size: 1.8rem;
-        font-weight: 600;
-        line-height: 172%;
-        letter-spacing: -0.06rem;
+      font-size: 1.8rem;
     }
     &__item {
-        margin-top: 1.2rem;
-        color: $c-ligth-grey;
-        font-size: 1.6rem;
-        font-weight: 400;
-        line-height: 180%;
-        letter-spacing: -0.06rem;
+      font-size: 1.4rem;
     }
+    &__nav {
+      width: 100%;
+      margin-top: 4rem;
+    }
+  }
 }

@@ -7,10 +7,6 @@ const pagination = document.querySelector('.swiper-pagination')
 console.log(pagination)
 
 new Swiper(container, {
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev'
-  // },
   pagination: {
     el: pagination,
     clickable: true
@@ -19,5 +15,13 @@ new Swiper(container, {
   slidesPerView: 3,
   SlidesPerColumn: 1,
   spaceBetween: 15,
-  modules: [Navigation, Pagination]
+  modules: [Navigation, Pagination],
+  breakpoints: {
+    1244: {
+      slidesPreView: 3
+    },
+    768: {
+      slidesPerView: 2
+    }
+  }
 })

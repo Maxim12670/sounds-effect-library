@@ -1,90 +1,127 @@
 .pricing {
-    height: rem(696);
-    padding: 6.5rem 0 7rem 0;
-    background-color: $c-blue;
-    color: $c-white;
-    &__title {
-        font-family: $title-font;
-        font-size: 3.6rem;
-        font-weight: 700;
-        line-height: 146.5%;
-        letter-spacing: -0.07rem;
-        text-align: center;
+  padding: 6.5rem 0 6.9rem 0;
+  background-color: $c-blue;
+  color: $c-white;
+  &__title {
+    font-family: $title-font;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 146.5%;
+    letter-spacing: -0.07rem;
+    text-align: center;
         
+  }
+  &__subtitle {
+    display: block;
+    margin-top: 1.4rem;
+    text-align: center;
+    color: $c-super-ligth-grey;
+    font-family: $primary-font;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 189%;
+    letter-spacing: -0.09rem;
+  }
+  &__list {
+    display: flex;
+    margin: 4.4rem 0 4rem;
+    justify-content: center;
+  }
+  &-card {
+    display: flex;
+    flex-direction: column;
+    width: rem(334);
+    height: 34.5rem;
+    padding: 2.6rem 6rem 4rem 3.4rem;
+    border: 1px solid rgb(205, 214, 249);
+    border-radius: 1.2rem;
+    margin-right: 4rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background-color: $c-ligth-blue;
+      border: none;
+      .pricing-card__btn {
+        background-color: $c-white;
+        color: $c-blue;
+      }
+    }
+    &__title {
+      color: $c-white;
+      font-family: $title-font;
+      font-size: 2.8rem;
+      font-weight: 600;
+      line-height: 4.5rem;
+      letter-spacing: -0.02rem;
     }
     &__subtitle {
-        display: block;
-        margin-top: 1.4rem;
-        text-align: center;
-        color: $c-super-ligth-grey;
-        font-family: $primary-font;
-        font-size: 1.8rem;
-        font-weight: 500;
-        line-height: 189%;
-        letter-spacing: -0.09rem;
+      min-height: rem(95);
+      margin-top: 1.3rem;
+      color: rgb(238, 238, 238);
+      font-family: $primary-font;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 168%;
+      letter-spacing: -0.07rem;
+    }
+    &__price {
+      margin-top: 2rem;
+      font-family: $primary-font;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 170%;
+      letter-spacing: -0.05rem;
+    }
+    &__btn {
+      display: block;
+      width: rem(138);
+      height: 5.2rem;
+      margin-top: auto;
+      margin-bottom: 0;
+      border: 0.2rem solid $c-white;
+      border-radius: 0.8rem;
+      font-family: $title-font;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pricing {
+    padding: 6rem 0 6rem;
+    &__title {
+      font-size: 2.8rem;
+    }
+    &__subtitle {
+      font-size: 1.8rem;
     }
     &__list {
-        display: flex;
-        margin: 4.4rem 0 4rem;
-        justify-content: center;
+      margin-top: 4rem;
     }
     &-card {
-        display: flex;
-        flex-direction: column;
-        width: rem(334);
-        height: 34.5rem;
-        padding: 2.6rem 6rem 4rem 3.4rem;
-        border: 1px solid rgb(205, 214, 249);
-        border-radius: 1.2rem;
-        margin-right: 4rem;
-        &:last-child {
-            margin-right: 0;
-        }
-        &:hover {
-            background-color: $c-ligth-blue;
-            border: none;
-            .pricing-card__btn {
-                background-color: $c-white;
-                color: $c-blue;
-            }
-        }
-        &__title {
-            color: $c-white;
-            font-family: $title-font;
-            font-size: 2.8rem;
-            font-weight: 600;
-            line-height: 4.5rem;
-            letter-spacing: -0.02rem;
-        }
-        &__subtitle {
-            min-height: rem(95);
-            margin-top: 1.3rem;
-            color: rgb(238, 238, 238);
-            font-family: $primary-font;
-            font-size: 1.8rem;
-            font-weight: 500;
-            line-height: 168%;
-            letter-spacing: -0.07rem;
-        }
-        &__price {
-            margin-top: 2rem;
-            font-family: $primary-font;
-            font-size: 2rem;
-            font-weight: 600;
-            line-height: 170%;
-            letter-spacing: -0.05rem;
-        }
-        &__btn {
-            display: block;
-            width: rem(138);
-            height: 5.2rem;
-            margin-top: auto;
-            margin-bottom: 0;
-            border: 0.2rem solid $c-white;
-            border-radius: 0.8rem;
-            font-family: $title-font;
-            font-size: 1.6rem;
-            font-weight: 600;
-        }
+      width: rem(280);
+      height: 31rem;
+      padding: 2.4rem 2.9rem;
+      &__title {
+        font-size: 2.4rem;
+      }
+      &__subtitle {
+        font-size: 1.6rem;
+      }
+      &__price {
+        font-size: 1.8rem;
+      }
+      &__btn {
+        width: rem(119);
+        height: 4.4rem;
+        font-size: 1.4rem;
+      }
     }
+    &__subtitle {
+      margin-top: 3rem;
+      font-size: 1.8rem;
+    }
+  }
 }

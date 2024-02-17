@@ -1,6 +1,6 @@
 .partner {
   width: 100%;
-  min-height: rem(237);
+  padding: 5rem 0 6rem;
   background-color: $c-grey;
   padding-top: 4.9rem;
 
@@ -29,6 +29,6 @@
 
 @media screen and (max-width: 768px) {
   .partner {
-    min-height: rem(195);
+    padding: 4rem 0 4rem;
   }
 }

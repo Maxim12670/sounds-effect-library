@@ -1,6 +1,5 @@
 .category {
-  min-height: 48.2rem;
-  padding-top: 6rem;
+  padding-top: 6rem 0 6rem;
   &__title {
     color: $c-dark-blue;
     font-family: $title-font;
@@ -48,6 +47,7 @@
 
 @media screen and (max-width: 768px) {
   .category{
+    padding: 4rem 0 4rem;
     &__title {
       font-size: 2.4rem;
     }
