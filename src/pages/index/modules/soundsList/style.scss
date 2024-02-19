@@ -208,6 +208,20 @@
       line-height: 3rem;
       letter-spacing: -0.02rem;
     }
+    &__button {
+      width: 36px;
+      height: 36px;
+    }
+    &__navigation {
+      &_btn{
+        width: 3.6rem;
+        height: 3.6rem;
+        font-size: 0;
+        img {
+          right: 0.5rem;
+        }
+      }
+    }
     &__filter {
       width: auto;
       &_item {
@@ -219,15 +233,8 @@
         }
       }
     }
-    &__navigation {
-      &_btn{
-        width: 36px;
-        height: 36px;
-        font-size: 0;
-        img {
-          right: -0.3rem;
-        }
-      }
+    &__descr{
+      display: none;
     }
     &__singer {
       display: none;

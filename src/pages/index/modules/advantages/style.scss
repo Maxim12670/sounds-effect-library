@@ -99,20 +99,31 @@
 @media screen and (min-width: 319px) and (max-width: 767px) {
   .advantages{
     padding: 5rem 0 5rem;
+    &__question {
+      display: block;
+      text-align: center;
+    }
     &__answer {
+      display: block;
+      text-align: center;
       width: rem(265);
       font-size: 2rem;
       line-height: 3rem;
       letter-spacing: -0.02rem;
     }
+    &__wrapp {
+      flex-direction: column;
+    }
     &__list {
       flex-direction: column;
+      width: rem(246);
       margin-top: 1.7rem;
       padding: 0 2rem;
+      margin-left: 0;
     }
     &-item {
       margin-top: 3rem;
-      width: 246px;
+      width: rem(246);
       &:nth-child(-n+4) {
         margin-top: 3rem;
       }

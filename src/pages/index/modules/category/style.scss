@@ -72,6 +72,9 @@
 @media screen and (min-width: 319px) and (max-width: 767px) {
   .category {
     padding: 3rem 0 4rem;
+    &__list {
+      margin-top: 2rem;
+    }
     &__title {
       font-size: 2rem;
       letter-spacing: -0.02rem;
@@ -80,7 +83,12 @@
       width: 13.9rem;
       height: 7rem;
     }
-    &__descr {
+    &__image {
+      width: 13.9rem;
+      height: 7rem;
+      object-fit: cover;
+    }
+    &__desrc {
       font-size: 1.6rem;
     }
     &__link {

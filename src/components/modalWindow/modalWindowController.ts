@@ -21,7 +21,7 @@ export default class ModalWindowControllert {
     console.log('')
     this.openBtn!.onclick = this.openWindow
     this.closeBtn!.onclick = this.closeWindow
-    window.onclick = this.checkClick
+    // window.onclick = this.checkClick
     console.log(window)
   }
 
@@ -37,11 +37,11 @@ export default class ModalWindowControllert {
     this.modalWindow?.classList.add(this.classStyle)
   }
 
-  checkClick = (e: MouseEvent) => {
-    console.log(333)
-    const target = (e.target as HTMLElement)
-    if ((!target.closest('.j-filters')) && (target !== this.openBtn)) {
-      this.closeWindow()
-    }
-  }
+  // checkClick = (e: MouseEvent) => {
+  //   console.log(333)
+  //   const target = (e.target as HTMLElement)
+  //   if ((!target.closest('.j-filters')) && (target !== this.openBtn)) {
+  //     this.closeWindow()
+  //   }
+  // }
 }

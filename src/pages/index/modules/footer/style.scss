@@ -100,9 +100,23 @@
       margin-top: 0.4rem;
     }
     &-descr {
+      &__text {
+        font-size: 1.4rem;
+      }
       &__copyright {
         margin-top: 1.3rem;
+        font-size: 1.4rem;
       }
+    }
+    &__wrapp {
+      flex-direction: column;
+    }
+    &__list {
+      font-size: 1.6rem;
+    }
+    &__item {
+      width: 10rem;
+      font-size: 1.4rem;
     }
     &__nav {
       margin-top: 2.5rem;
