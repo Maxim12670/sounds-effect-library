@@ -1,0 +1,153 @@
+.burger {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &__logo {
+    span {
+      display: block;
+      width: 30px;
+      height: 2.4px;
+      border-radius: 3px;
+      background: $c-white;
+      transform: scale(1);
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 2.4px;
+      background: $c-white;
+      transition: all 0.3s ease 0s;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 2.4px;
+      background: $c-white;
+      transition: all 0.3s ease 0s;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    &.active {
+      span {
+        transform: scale(0);
+      }
+    }
+    &.active::before{
+      top: 50%;
+      transform: rotate(-45deg) translate(0, -50%);
+    }
+    &.active::after{
+      bottom: 50%;
+      transform: rotate(45deg) translate(0, 50%);
+    }
+  }
+  &__wrapper {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: -2.2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: burgerAnimation 0.4s;
+  }
+  &__navigation {
+    margin-top: 60px;
+  }
+}
+
+.burger.active {
+  display: flex;
+}
+
+.burger__wrapper.active {
+  display: flex;
+}
+
+@keyframes burgerAnimation {
+  from  {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 319px) and (max-width: 767px) {
+  .burger {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    &__logo {
+      span {
+        display: block;
+        width: 2rem;
+        height: 0.2rem;
+        border-radius: 3px;
+        background: $c-white;
+        transform: scale(1);
+      }
+      &::before {
+        width: 2rem;
+        height: 0.2rem;
+      }
+      &::after {
+        width: 2rem;
+        height: 0.2rem;
+      }
+    }
+    &__wrapper {
+      display: none;
+      position: relative;
+      z-index: 999;
+      flex-direction: column;
+      position: fixed;
+      top: -2.2rem;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      animation: burgerAnimation 0.4s;
+    }
+    &__navigation {
+      margin-top: 60px;
+    }
+  }
+}
+
+// .burger {
+//     display: flex;
+//     &__logo {
+//       span {
+//         display: block;
+//         width: 2.4rem;
+//         height: .2rem;
+//       }
+//       &::before {
+//         width: 2.4rem;
+//       }
+//       &::after {
+//         width: 2.4rem;
+//       }
+//       &.active {
+//         span {
+//           transform: scale(0);
+//         }
+//       }
+//       &.active::before{
+//         top: 50%;
+//         transform: rotate(-45deg) translate(0, -50%);
+//       }
+//       &.active::after{
+//         bottom: 50%;
+//         transform: rotate(45deg) translate(0, 50%);
+//       }
+//     }
+//   }

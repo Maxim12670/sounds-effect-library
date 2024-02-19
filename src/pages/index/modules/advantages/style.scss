@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1243px) {
   .advantages {
     padding: 4rem 0 6rem 0;
     &__wrapp {
@@ -80,13 +80,54 @@
       font-size: 2.4rem;
       text-align: center;
       line-height: 160%;
+      letter-spacing: -0.04rem;
     }
     &__list{
       margin: 0 auto;
-      margin-top: 4.1rem;
+      margin-top: 3.98rem;
     }
     &-item {
       text-align: left;
+      margin-top: 5.81rem;
+      &__wrapp {
+        margin-top: 1.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 319px) and (max-width: 767px) {
+  .advantages{
+    padding: 5rem 0 5rem;
+    &__answer {
+      width: rem(265);
+      font-size: 2rem;
+      line-height: 3rem;
+      letter-spacing: -0.02rem;
+    }
+    &__list {
+      flex-direction: column;
+      margin-top: 1.7rem;
+      padding: 0 2rem;
+    }
+    &-item {
+      margin-top: 3rem;
+      width: 246px;
+      &:nth-child(-n+4) {
+        margin-top: 3rem;
+      }
+      &:nth-child(1) {
+        order: 1;
+      }
+      &:nth-child(2) {
+        order: 4;
+      }
+      &:nth-child(3) {
+        order: 2;
+      }
+      &:nth-child(4) {
+        order: 3;
+      }
     }
   }
 }

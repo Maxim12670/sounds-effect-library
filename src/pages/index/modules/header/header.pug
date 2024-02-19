@@ -6,18 +6,9 @@ section.head.j-popup-block
       .header__logo
         img(src="../../assets/images/icons/WavesCo.svg" alt="logo")
       .header__wrapper
-        .header__navigation
-          ul.header__list
-            each link in links
-              li.header__item
-                +Button({
-                  label: link.text,
-                  url: link.url,
-                })
-        .header__btn
-          +Button({
-            label: 'Login', JClass: 'j-example-popup-button'
-          })
+        include ./modules/navigation/navigation
+      .header__burger.j-burger-btn
+        include ./modules/burgerMenu/burgerMenu
   .head__line
   .container
     .head__content

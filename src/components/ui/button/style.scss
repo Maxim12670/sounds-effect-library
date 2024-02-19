@@ -25,3 +25,19 @@
     text-decoration-line: underline;
   }
 }
+
+@media screen and (max-width: 1243px) {
+  .link {
+    &__emit {
+      letter-spacing: -0.09rem;
+    }
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .link {
+    &__emit {
+      letter-spacing: -0.01rem;
+    }
+  }
+}

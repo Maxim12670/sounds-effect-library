@@ -88,14 +88,19 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1243px) {
   .pricing {
     padding: 6rem 0 6rem;
     &__title {
       font-size: 2.8rem;
+      margin-top: 0.5rem;
     }
     &__subtitle {
+      margin-top: 1.3rem;
       font-size: 1.8rem;
+      &_bottom {
+        margin-top: -1rem;
+      }
     }
     &__list {
       margin-top: 4rem;
@@ -103,25 +108,76 @@
     &-card {
       width: rem(280);
       height: 31rem;
-      padding: 2.4rem 2.9rem;
+      padding: 3rem 2.9rem;
       &__title {
         font-size: 2.4rem;
       }
       &__subtitle {
         font-size: 1.6rem;
+        line-height: 144%;
+        margin-top: 0.6rem;
       }
       &__price {
         font-size: 1.8rem;
+        margin-top: -0.5rem;
       }
       &__btn {
         width: rem(119);
         height: 4.4rem;
         font-size: 1.4rem;
+        margin-top: 1.9rem;
       }
     }
+  }
+}
+
+@media screen and (min-width: 319px) and (max-width: 767px) {
+  .pricing {
+    padding: 5rem 1.6rem;
+    &__title {
+      font-size: 2.4rem;
+      line-height: 138%;
+    }
     &__subtitle {
-      margin-top: 3rem;
-      font-size: 1.8rem;
+      margin-top: 2rem;
+      font-size: 1.6rem;
+      line-height: 100%;
+      letter-spacing: 0.0rem;
+      &_bottom {
+        margin-top: -1.8rem;
+      }
+    }
+    &__list {
+      flex-direction: column;
+      margin-top: 4.6rem;
+    }
+    &-card {
+      width: 28.7rem;
+      height: 28rem;
+      padding: 2.4rem 0 3.8rem 3rem;
+      &:nth-child(2) {
+        margin-top: 2rem;
+      }
+      &__title {
+        font-size: 2rem;
+      }
+      &__subtitle {
+        
+        font-size: 1.6rem;
+        letter-spacing: -0.05rem;
+      }
+      &__price {
+        font-size: 1.8rem;
+        margin-top: -1.1rem;
+      }
+      &__btn {
+        padding: 1rem 2rem;
+        margin-top: 1.2rem;
+        width: 12.2rem;
+        height: 4.4rem;
+        font-size: 1.4rem;
+        letter-spacing: -0.09rem;
+      }
     }
   }
 }

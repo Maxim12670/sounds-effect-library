@@ -3,14 +3,21 @@
 @import "./modules/index";
 @import "../../components/index";
 
+
 .container {
   display: block;
-  width: rem(1044);
   margin: 0 auto;
+  max-width: rem(1044);
 }
 
-@media screen and (max-width: 1243px) {
+@media screen and (min-width: 768px) and (max-width: 1243px) {
   .container {
-    width: rem(648);
+    max-width: rem(648);
+  }
+}
+
+@media screen and (min-width: 319px) and (max-width: 767px) {
+  .container {
+    max-width: rem(288);
   }
 }

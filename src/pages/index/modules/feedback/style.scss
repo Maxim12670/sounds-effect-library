@@ -25,7 +25,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1243px) {
   .feedback {
     padding: 6rem 0 9rem;
     &__caption {
@@ -33,6 +33,20 @@
     }
     &__title {
       font-size: 2.4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 319px) and (max-width: 767px) {
+  .feedback {
+    padding: 5rem 0 7rem;
+    &__caption {
+      font-size: 1.4rem;
+    }
+    &__title {
+      font-size: 2rem;
+      line-height: 3rem;
+      letter-spacing: -0.0rem;
     }
   }
 }

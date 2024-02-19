@@ -26,13 +26,16 @@ section.sounds
             h3.sounds__time= soundItem.timer
           h2.sounds__descr= soundItem.descr
           h2.sounds__singer= soundItem.singer
-          .sounds__button-list
-            button
-              img(src='../../assets/images/icons/button/favoriteBtn.svg' alt="favorite button")
-            button
-              img(src='../../assets/images/icons/button/downloadBtn.svg' alt="download button")
-            button
-              img(src='../../assets/images/icons/button/moreBtn.svg' alt="more button")
+          ul.sounds__button-list
+            li
+              button
+                img(src='../../assets/images/icons/button/favoriteBtn.svg' alt="favorite button")
+            li 
+              button
+                img(src='../../assets/images/icons/button/downloadBtn.svg' alt="download button")
+            li 
+              button
+                img(src='../../assets/images/icons/button/moreBtn.svg' alt="more button")
     .sounds__link
       +Button({
         label: 'See all sound effects',

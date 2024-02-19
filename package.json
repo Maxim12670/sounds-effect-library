@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack serve --env development --config ./webpack/config.js",
+    "dev": "cross-env NODE_ENV=development webpack serve --env development --config ./webpack/config.js --host 0.0.0.0",
     "build": "webpack --env production --config ./webpack/config.js",
     "stylelint": "stylelint \"**/*.scss\" --fix"
   },

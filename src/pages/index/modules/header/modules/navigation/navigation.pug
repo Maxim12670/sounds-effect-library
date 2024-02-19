@@ -1,0 +1,13 @@
+.navigation
+  .navigation__nav
+    ul.navigation__list
+      each link in links
+        li.navigation__item
+          +Button({
+            label: link.text,
+            url: link.url,
+          })
+  .navigation__btn
+    +Button({
+      label: 'Login', JClass: 'j-example-popup-button'
+    })

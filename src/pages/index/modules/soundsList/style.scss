@@ -10,6 +10,7 @@
     letter-spacing: -0.06rem;
   }
   &__navigation {
+    position: relative;
     display: flex;
     align-items: center;
     height: 4.6rem;
@@ -153,18 +154,20 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1243px) {
   .sounds {
-    padding: 5rem 0 5rem;
+    padding: 3.5rem 0 5rem;
     &__title {
       font-size: 2.4rem;
     }
     &__filter{
       &_item {
         font-size: 1.4rem;
+        letter-spacing: -0.04rem;
       }
     }
     &__navigation {
+      margin-top: 0.8rem;
       &_btn {
         width: rem(101);
         padding-left: 14px;
@@ -172,6 +175,12 @@
           right: 0.4rem;
         }
       }
+    }
+    &__list {
+      margin-top: 0.8rem;
+    }
+    &__item {
+      padding: 0.6rem 2rem 0.4rem 2rem;
     }
     &__wrap {
       width: rem(129);
@@ -184,6 +193,65 @@
     }
     &__singer {
       font-size: 1.4rem;
+    }
+    &__link {
+      margin-top: 0.4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 319px) and (max-width: 767px) {
+  .sounds {
+    padding: 5rem 0;
+    &__title {
+      font-size: 2rem;
+      line-height: 3rem;
+      letter-spacing: -0.02rem;
+    }
+    &__filter {
+      width: auto;
+      &_item {
+        font-size: 1.4rem;
+        letter-spacing: -0.05rem;
+        margin-right: 1.3rem;
+        &:nth-child(n+4){
+          display: none;
+        }
+      }
+    }
+    &__navigation {
+      &_btn{
+        width: 36px;
+        height: 36px;
+        font-size: 0;
+        img {
+          right: -0.3rem;
+        }
+      }
+    }
+    &__singer {
+      display: none;
+    }
+    &__list {
+      margin-top: 1.5rem;
+    }
+    &__wrap {
+      width: 129px;
+    }
+    &__item {
+      padding: 0 0 0 0.9rem;
+      height: 60px;
+    }
+    &__button-list {
+      width: 82px;
+      li {
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+    &__link {
+      margin-top: 0.9rem;
     }
   }
 }

@@ -1,0 +1,86 @@
+.navigation {
+  display: flex;
+  &__nav {
+    width: rem(475);
+    height: 4.4rem;
+    padding: 0 1rem;
+    margin-right: 4.3rem;
+  }
+  &__list {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    font-family: $title-font;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    letter-spacing: -0.01rem;
+    color: $c-opacity-grey;
+    &:hover {
+      color: $c-white;
+    }
+  }
+  &__btn{
+    width: 7.8rem;
+    height: 4.4rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1243px) {
+  .navigation {
+    margin-top: 7rem;
+    height: rem(308);
+    padding: 2.4rem 0 4rem 8.4rem;
+    background: $c-super-dark-blue;
+    display: flex;
+    flex-direction: column;
+    &__nav{
+      height: 18.4rem;
+      padding-left: 0;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    &__item {
+      width: 100%;
+      text-align: left;
+    }
+    &__btn {
+      margin-top: 1.6rem;
+    }
+  }
+}
+
+@media screen and (min-width: 319px) and (max-width: 767px) {
+  .navigation {
+    margin-top: 7rem;
+    height: 100vh;
+    padding: 2.4rem 0 0 1.6rem;
+    background: $c-super-dark-blue;
+    display: flex;
+    flex-direction: column;
+    &__nav{
+      height: 18.4rem;
+      padding-left: 0;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    &__item {
+      width: 100%;
+      text-align: left;
+    }
+    &__btn {
+      margin-top: 1.6rem;
+    }
+  }
+}
+
+
