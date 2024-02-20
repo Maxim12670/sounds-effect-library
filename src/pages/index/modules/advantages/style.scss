@@ -14,7 +14,7 @@
     text-transform: uppercase;
   }
   &__answer {
-    margin-top: 1.7rem;
+    margin-top: 1.5rem;
     width: rem(337);
     color: $c-dark-blue;
     font-family: $title-font;
@@ -41,7 +41,7 @@
     }
     &__wrapp {
       width: 100%;
-      margin-top: 2.1rem;
+      margin-top: 1.6rem;
     }
     &__title {
       color: $c-dark-blue;
@@ -58,13 +58,14 @@
       font-weight: 500;
       line-height: 178%;
       letter-spacing: -0.03rem;
+      margin-top: 0.4rem;
     }
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1243px) {
   .advantages {
-    padding: 4rem 0 6rem 0;
+    padding: 3.5rem 0 6rem 0;
     &__wrapp {
       display: flex;
       flex-direction: column;
@@ -90,7 +91,8 @@
       text-align: left;
       margin-top: 5.81rem;
       &__wrapp {
-        margin-top: 1.6rem;
+        margin-top: 2rem;
+        margin-bottom: -0.5rem;
       }
     }
   }
@@ -98,10 +100,14 @@
 
 @media screen and (min-width: 319px) and (max-width: 767px) {
   .advantages{
-    padding: 5rem 0 5rem;
+    padding: 4.4rem 0 5rem;
     &__question {
       display: block;
       text-align: center;
+      margin-top: 0.15rem;
+    }
+    &__title {
+      letter-spacing: -0.095rem;
     }
     &__answer {
       display: block;
@@ -109,7 +115,10 @@
       width: rem(265);
       font-size: 2rem;
       line-height: 3rem;
-      letter-spacing: -0.02rem;
+      padding-left: 2.7rem;
+      padding-right: 1rem;
+      margin-top: 1.7rem;
+      letter-spacing: -0.09rem;
     }
     &__wrapp {
       flex-direction: column;
@@ -123,6 +132,7 @@
     }
     &-item {
       margin-top: 3rem;
+      margin-bottom: -0.4rem;
       width: rem(246);
       &:nth-child(-n+4) {
         margin-top: 3rem;
@@ -138,6 +148,9 @@
       }
       &:nth-child(4) {
         order: 3;
+      }
+      &__descr {
+        margin-top: 0rem;
       }
     }
   }

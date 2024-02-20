@@ -31,7 +31,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1243px) {
   .navigation {
-    margin-top: 7rem;
+    margin-top: 15.2rem;
     height: rem(308);
     padding: 2.4rem 0 4rem 8.4rem;
     background: $c-super-dark-blue;
@@ -58,9 +58,9 @@
 
 @media screen and (min-width: 319px) and (max-width: 767px) {
   .navigation {
-    margin-top: 7rem;
+    margin-top: 9rem;
     height: 100vh;
-    padding: 2.4rem 0 0 1.6rem;
+    padding: 7.4rem 0 0 1.6rem;
     background: $c-super-dark-blue;
     display: flex;
     flex-direction: column;

@@ -50,20 +50,34 @@
 
 .my-swiper-pagination{
   position: absolute;
-  bottom: 10px !important;
+  bottom: 1rem !important;
 }
 
-@media screen and (max-width: 319px) {
+@media screen and (min-width: 768px) and (max-width: 1243px) {
   .feedback {
+    padding: 6rem 0 4.9rem;
     &__list{
       &__list {
         margin-top: 4rem;
       }
     }
     &-item { 
+      padding: 2rem 2rem 3rem 2rem;
       &__text {
+        letter-spacing: -0.06rem;
         font-size: 1.4rem;
+        margin-top: 0.9rem;
+      }
+      &__photo {
+        margin-top: 1.3rem;
+      }
+      &__name {
+        letter-spacing: -0.09rem;
+        margin-top: -0.8rem;
       }
     }
+  }
+  .my-swiper-pagination{
+    bottom: 3.9rem !important;
   }
 }

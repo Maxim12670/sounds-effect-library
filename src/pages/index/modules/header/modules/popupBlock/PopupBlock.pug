@@ -13,19 +13,19 @@ block content
           img(src=item.url, alt=item.alt)
     h3.modal-window__subtitle or use your email
     .modal-window__form
-      .modal-window__label(for="email")
+      .modal-window__label.modal-window__label-email(for="email")
         +Input({
           type: 'email',
           placeholder: 'Email',
           label: 'Email'
         })
-      .modal-window__label(for="password")
+      .modal-window__label.modal-window__label-password(for="password")
         +Input({
           type: 'password',
           placeholder: 'Password',
           label: 'Password'
         })
-      .modal-window__label
+      .modal-window__label.modal-window__label-check
         +Checkbox({
           label: 'Remember Me'
         })

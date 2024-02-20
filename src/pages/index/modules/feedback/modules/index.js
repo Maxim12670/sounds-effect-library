@@ -11,18 +11,16 @@ new Swiper(container, {
     clickable: true
   },
   loop: true,
+  slidesPreView: 1,
   SlidesPerColumn: 1,
   spaceBetween: 15,
   modules: [Navigation, Pagination],
   breakpoints: {
-    320: {
-      slidesPreView: 1
-    },
     768: {
       slidesPerView: 2
     },
     1244: {
-      slidesPreView: 3
+      slidesPerView: 3
     }
   }
 })
